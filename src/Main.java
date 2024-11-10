@@ -1,8 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        BonusMilesService service = new BonusMilesService();
-        int ticketPrice = 17342;
-        int totalMiles = service.calculate(ticketPrice); // должно получиться 500
-        System.out.println(totalMiles);
+        BmiService service = new BmiService();
+        double weight = 98;
+        double height = 1.87;
+        int bmi = service.calculate(weight, height);
+
+        System.out.println("BMI-индекс равен = " + bmi);
     }
 }

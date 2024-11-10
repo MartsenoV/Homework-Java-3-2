@@ -1,7 +1,6 @@
-public class BonusMilesService {
-    public int calculate(int ticketPrice) {
-        int totalMiles = ticketPrice / 20;
-        return totalMiles;
+public class BmiService {
+    public int calculate(double weightKg, double heightMeters) {
+        double bmi = weightKg / (heightMeters * heightMeters);
+        return (int) bmi;
     }
-
 }
